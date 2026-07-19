@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: pronunciation-scorer
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+app:
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS:http://localhost:5173}
+
+vosk:
+  model:
+    path: ${VOSK_MODEL_PATH:./models/vosk-model-small-en-us-0.15}
+
+logging:
+  level:
+    root: INFO
+    com.livo.pronunciation: INFO

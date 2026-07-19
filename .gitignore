@@ -1,0 +1,16 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+
+# Vosk model (downloaded, not committed - see backend/README.md)
+backend/models/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+.env
+.env.local
+
+# OS
+.DS_Store
